@@ -1,4 +1,4 @@
 # matamaduranews
-News web powered by Wordpress and customed with php
+News web powered by Wordpress and custom theme using php
 
-Create new template for matamaduranews.com 
+Create new theme for matamaduranews.com 

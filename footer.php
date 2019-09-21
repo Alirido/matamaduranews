@@ -1,29 +1,26 @@
-</div></div>
-<div class="footer clearfix" style="background: blue; padding: 20px 0px 0px">
-    <div class="row footer__top main clearfix" >
+<?php global $tux_option;?>
+<div style="padding: 10px 0px 0px; background: lightskyblue">
+    <div class="footer-top main" style="background: dodgerblue; margin: 10px 20px;">
         <?php if ( is_active_sidebar( 'home-footer-widget' ) ) : ?>
             <?php dynamic_sidebar( 'home-footer-widget' ); ?>
         <?php endif; ?>
-
     </div>
-    <div class="row clearfix" style="background: red">
-        <div class="row footer__bottom main clearfix" style="background: red">
-            <div class="col-bs10-3" style="margin-left:0px;padding-left: 0px;">
-                <?php if ($tux_option['tux_logo'] != '') { ?>
-                    <div class="logo">
-                        <a href="<?php echo esc_url( home_url() ); ?>">
-                            <img src="<?php echo esc_attr( $tux_option['tux_logo'] ); ?>" alt="<?php bloginfo( 'name' ); ?>">
-                        </a>
-                    </div>
-                <?php } ?>
-            </div>
-            <div class="col-bs10-7">
-                <div class="text-right clearfix">
-                    <div class="footer__copy clearfix" style="text-align: right !important;">
-                        <?php if(!empty($tux_option['tux_copyrights'] )) { echo $tux_option['tux_copyrights']; } else { ?>
-                            Copyright &copy; <?php echo date('Y'); ?> - <span class="red">Theme by Andika</span>
-                        <?php } ?>
-                    </div>
+    <div class="footer-bottom" style="background: red">
+        <div>
+            <?php if ($tux_option['tux_logo'] != '') { ?>
+                <div>
+                    <a href="<?php echo esc_url( home_url() ); ?>">
+                        <img src="<?php echo esc_attr( $tux_option['tux_logo'] ); ?>" alt="<?php bloginfo( 'name' ); ?>">
+                    </a>
+                </div>
+            <?php } ?>
+        </div>
+        <div>
+            <div>
+                <div style="text-align: right">
+                    <?php if(!empty($tux_option['tux_copyrights'] )) { echo $tux_option['tux_copyrights']; } else { ?>
+                        Copyright &copy; <?php echo date('Y'); ?> - <span class="red">Theme by <a href="http://tuxtheme.com" />Tuxtheme</a></span>
+                    <?php } ?>
                 </div>
             </div>
         </div>
@@ -42,5 +39,3 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/jquery.bxslider.mini.js" defer></script>
 <?php wp_footer(); ?>
 
-</body>
-</html>

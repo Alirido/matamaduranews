@@ -15,14 +15,11 @@ body {
     font-smoothing: antialiased!important
 }
 
+
 .main {
     position: relative;
     text-align: left;
     margin: 0 auto;
-}
-
-.al {
-    text-align: left!important
 }
 
 .lsi,
@@ -86,6 +83,14 @@ li {
     text-align: left;
 }
 
+.f24{
+    font-size: 24px;
+}
+
+.f14{
+    font-size: 14px;
+}
+
 .btsquare,
 .imgmem,
 .lg-textrep,
@@ -96,40 +101,20 @@ li {
     overflow: hidden
 }
 
-#headline,
-#headline .linkimg,
-#headline iframe,
-#headline img {
-    height: auto!important;
-    width: 100%!important
+.cekheadline{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-#headline-2 a,
-#headline-3 a {
-    line-height: 20px!important;
-    font-size: 14px!important;
-    font-weight: 700!important
-}
-
-#headline-3 {
-    margin-top: 5px
-}
-
-#headline-1 {
-    width: 550px;
-    height: 305px
-}
-
-#headline-2,
-#headline-3 {
-    width: 274px;
-    height: 150px;
-    float: right
-}
-
-#headline-2 .hltile div,
-#headline-3 .hltile div {
-    padding: 10px!important
+.checkout{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: auto;
+    margin: 2px;
 }
 
 .pos_abs {
@@ -137,8 +122,10 @@ li {
 }
 
 .hlover,
-.hlover_title a {
-    color: #fff
+.hlover_title {
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
 }
 
 .hlover {
@@ -150,12 +137,11 @@ li {
     background: #555;
     background: rgba(0, 0, 0, .5);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .7) 60%);
-    padding: 10px 20px 15px;
+    padding: 10px 20px 0px;
     text-shadow: 0 0 5px #111;
     font-weight: 800;
     font-weight: 600;
     font-size: 32px;
-    line-height: 38px;
     color: #fff
 }
 
@@ -173,12 +159,11 @@ li {
     margin: 0
 }
 
-.f16 {
-    font-size: 16px
+.f12 {
+    font-size: 12px
 }
 
-.red,
-.red a {
+.red {
     color: #b9201f!important
 }
 
@@ -221,14 +206,13 @@ li {
 
 .mySlide{
     position: relative;
-    display: none;
 }
 
 .fade {
     -webkit-animation-name: slide_in_right;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 5s;
     animation-name: slide_in_right;
-    animation-duration: 1s;
+    animation-duration: 5s;
 }
 
 @-webkit-keyframes slide_in_right {
@@ -265,4 +249,12 @@ li {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
+}
+
+.txt-oev-1,
+.txt-oev-2,
+.txt-oev-3 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 10%;
 }

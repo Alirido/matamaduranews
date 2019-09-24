@@ -8,7 +8,7 @@ $args = array (
 );
 $query = new WP_Query( $args );
 ?>
-<div  style="border: 2px solid white; width: 80%; margin: auto">
+<div  style="width: 80%; margin: auto">
     <div class="cekheadline">
         <div class="checkout">
             <?php
@@ -79,7 +79,7 @@ $query = new WP_Query( $args );
                     </div>
                 </div>
             </div>
-            <div class="cekheadline" style="border: 2px solid white">
+            <div class="cekheadline">
                 <div class="checkout">
                     <?php
                     $query->the_post();
@@ -126,33 +126,5 @@ $query = new WP_Query( $args );
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="headline ovh" id="headline"  >
-    <div id="slideshow" class="clsslide" style="z-index:0">
-        <?php
-        while( $query->have_posts() ) {
-            $query->the_post();
-            $excerpt_text = short_by_word( get_the_excerpt(), 5 );
-            $img_src = wp_get_attachment_image_src( get_post_thumbnail_id( $GLOBALS['post']->ID ), 'post-slider-medium' );
-            if($img_src[0]!='') {
-                $thumbnail = $img_src[0];
-            }
-            else {
-                $thumbnail = get_template_directory_uri().'/images/no-image-available.png';
-            }
-            ?>
-            <div class="mySlide" style="z-index:9999">
-                <a href="<?php echo get_permalink(); ?>" title="<?php echo get_the_title(); ?>">
-                    <img src='<?php echo $thumbnail; ?>' alt='<?php echo get_the_title(); ?>' />
-                </a>
-                <div class="ovh hlover" >
-                    <div class="pt5"></div>
-                    <h2 class="hlover_title"><a href="<?php echo get_permalink(); ?>" title="<?php echo get_the_title(); ?>" class="txt-oev-2"><?php echo get_the_title(); ?></a></h2>
-                </div>
-            </div>
-        <?php } ?>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 </div>

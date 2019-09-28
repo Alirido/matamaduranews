@@ -121,6 +121,11 @@ li {
     position: absolute
 }
 
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
 .hlover,
 .hlover_title {
     color: #fff;
@@ -257,4 +262,5 @@ li {
     text-overflow: ellipsis;
     overflow: hidden;
     line-height: 10%;
+    color: #fff;
 }

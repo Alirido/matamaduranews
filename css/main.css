@@ -1,0 +1,266 @@
+*,
+body {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: "Open Sans", arial, sans-serif;
+    font-size: 13px;
+    color: #323233;
+    background-color: #ebebeb;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased!important;
+    -moz-font-smoothing: antialiased!important;
+    font-smoothing: antialiased!important
+}
+
+
+.main {
+    position: relative;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.lsi,
+.lsi ul,
+ul {
+    list-style: none
+}
+
+li {
+    list-style: none;
+    display: list-item
+}
+
+.footer {
+    padding: 20px 0 0px;
+    background: #c4391a;
+    color: #fff;
+    width: 100%;
+}
+
+.footer__top {
+    padding: 10px 0 30px;
+    display:table;
+    width: 80%;
+}
+
+.footer__bottom {
+    padding: 15px 0px;
+    background: #4a4b4e;
+}
+
+.footer__bottom-content{
+    width: 92%;
+    color: #b1b1b1;
+    display: table;
+    float: right;
+}
+
+.footer__top .widget_nav_menu a{color:#FFFFFF; font-size:14px;}
+
+.col-bs10-2 {
+    width: 20%;
+    float:left;
+}
+
+.col-bs10-3,
+.col-bs10-7 {
+    color: #b1b1b1;
+    width: 60%;
+    float: right;
+    min-height: 1px;
+    padding-right: 30px;
+    text-align:right;
+    margin-right: 15px;
+}
+.col-bs10-3 {
+    margin-left: 0;
+    padding-left: 0;
+    width: 30%;
+    float: left;
+    text-align: left;
+}
+
+.f24{
+    font-size: 24px;
+}
+
+.f14{
+    font-size: 14px;
+}
+
+.btsquare,
+.imgmem,
+.lg-textrep,
+.main-menu>div>ul>li>a,
+.ovh,
+.sideover span,
+.tagcloud2 {
+    overflow: hidden
+}
+
+.cekheadline{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.checkout{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: auto;
+    margin: 2px;
+}
+
+.pos_abs {
+    position: absolute
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hlover,
+.hlover_title {
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+}
+
+.hlover {
+    bottom: 0;
+    width: 100%!important
+}
+
+.hlover_title {
+    background: #555;
+    background: rgba(0, 0, 0, .5);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .7) 60%);
+    padding: 10px 20px 0px;
+    text-shadow: 0 0 5px #111;
+    font-weight: 800;
+    font-weight: 600;
+    font-size: 32px;
+    color: #fff
+}
+
+.hlover_topix a {
+    width: auto;
+    background: #fff;
+    padding: 5px 20px;
+    font-weight: 700;
+    border-right: 4px solid #b9201f
+}
+
+.cl,
+.cl2 {
+    padding: 0;
+    margin: 0
+}
+
+.f12 {
+    font-size: 12px
+}
+
+.red {
+    color: #b9201f!important
+}
+
+.pt5 {
+    padding-top: 5px
+}
+
+.navthumb{border-top:2px solid #b9201f;border-bottom:0 solid #eee;background:#eee}
+.navthumb .bx-wrapper {
+    background: #000;
+}
+.navthumb .bx-wrapper a{color:#fff;}
+
+.bgwhite {
+    background-color: #fff!important
+}
+
+.pos_rel {
+    position: relative
+}
+
+.f11 {
+    font-size: 11px
+}
+
+.ac {
+    text-align: center!important
+}
+
+.pa5 {
+    padding: 5px
+}
+
+
+.clsslide{
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlide{
+    position: relative;
+}
+
+.fade {
+    -webkit-animation-name: slide_in_right;
+    -webkit-animation-duration: 5s;
+    animation-name: slide_in_right;
+    animation-duration: 5s;
+}
+
+@-webkit-keyframes slide_in_right {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.txt-oev-1,
+.txt-oev-2,
+.txt-oev-3 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 10%;
+    color: #fff;
+}

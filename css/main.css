@@ -101,6 +101,23 @@ li {
     overflow: hidden
 }
 
+theader {
+    background: #53575c;
+}
+
+.header__top {
+    background: #c4391a;
+}
+
+.header__mid{
+    background: #53575c;
+    border-bottom: 1px solid gray;
+}
+
+.header__bottom{
+
+}
+
 .cekheadline{
     display: flex;
     flex-direction: row;
@@ -262,5 +279,22 @@ a:hover {
     text-overflow: ellipsis;
     overflow: hidden;
     line-height: 10%;
+    color: #fff;
+}
+
+ul.top_menu {
+    padding: 0px;
+}
+
+ul.top_menu li,
+ul.nav__row li{
+    display: inline-table;
+}
+ul.top_menu li a,
+ul.nav__row li a{
+    text-transform: uppercase;
+    padding: 7px 4px;
+    font-size: 12px;
+    display: table;
     color: #fff;
 }

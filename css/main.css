@@ -15,7 +15,6 @@ body {
     font-smoothing: antialiased!important
 }
 
-
 .main {
     position: relative;
     text-align: left;
@@ -35,7 +34,7 @@ li {
 
 .footer {
     padding: 20px 0 0px;
-    background: #c4391a;
+    background: #bd0f0f;
     color: #fff;
     width: 100%;
 }
@@ -62,7 +61,7 @@ li {
 
 .col-bs10-2 {
     width: 20%;
-    float:left;
+    float:right;
 }
 
 .col-bs10-3,
@@ -106,16 +105,42 @@ theader {
 }
 
 .header__top {
-    background: #c4391a;
+    background: #53575c;
 }
 
 .header__mid{
-    background: #53575c;
-    border-bottom: 1px solid gray;
+    background: #bd0f0f;
+    padding: 20px 0px 10px;
+}
+
+.header__mid-content{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: space-between;
+}
+
+.header_search{
+    position: absolute;
+    -webkit-align-self: center;
+    align-self: center;
+    justify-self: end;
 }
 
 .header__bottom{
+    background: #53575c;
+}
 
+.logo{
+    position: absolute;
+    width: 50%;
+    float: left;
+    padding-left: -20%;
+}
+
+.row {
+    flex-direction: row;
 }
 
 .cekheadline{

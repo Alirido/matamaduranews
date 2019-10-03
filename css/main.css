@@ -117,7 +117,6 @@ theader {
     display: flex;
     width: 80%;
     flex-direction: row;
-    justify-self: center;
     justify-content: space-between;
 }
 
@@ -125,17 +124,94 @@ theader {
     position: absolute;
     -webkit-align-self: center;
     align-self: center;
-    justify-self: end;
+    justify-self: flex-end;
+}
+
+.searchbar{
+    width: 30%;
 }
 
 .header__bottom{
     background: #53575c;
+    z-index: 1000;
+}
+
+.sticky__header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#header-menu {
+    width:100%;
+    text-transform: uppercase;
+    font-family: "Open Sans", arial, sans-serif;
+    padding: 0;
+}
+
+#header-menu ul{
+    align-self: center;
+    justify-content: space-evenly;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-self: center;
+}
+
+#header-menu ul li {
+    display:inline-block;
+    position:relative;
+}
+
+#header-menu ul li a {
+    padding: 10px 10px;
+    color: #fff;
+    display:inline-block;
+    text-decoration:none;
+    font-weight:bold;
+    width:100%;
+}
+
+#header-menu ul li a:hover {
+    color: #b1b1b1;
+    background: #777;
+}
+
+#header-menu ul li ul li a {
+    width: 200px;
+}
+
+#header-menu li ul {
+    display:none;
+    position:absolute;
+    left:0;
+    z-index:300;
+    width:200px;
+}
+
+#header-menu li:hover ul {
+    display: block;
+}
+
+#header-menu li ul ul {
+    left:140px;
+}
+
+#header-menu li li a {
+    border:0;
+    padding-bottom: 10px;
+    width:150px;
+    background: #777;
+    margin: auto;
+    opacity: 70%;
+}
+
+#header-menu li li a:hover {
+    color: #b1b1b1;
 }
 
 .logo{
     position: absolute;
-    width: 50%;
-    float: left;
     padding-left: -20%;
 }
 
@@ -322,4 +398,8 @@ ul.nav__row li a{
     font-size: 12px;
     display: table;
     color: #fff;
+}
+
+.mb-10{
+    margin-bottom: -10px;
 }

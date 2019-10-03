@@ -41,6 +41,7 @@ require_once( 'inc/widget/widget-topik.php' );
 require_once( 'inc/widget/widget-posterbaru.php' );
 */
 // Add navigation menus
+add_theme_support('menus');
 register_nav_menus( array(
 	'primary'	=> __( 'Menu Utama', 'tuxtheme' ),
 	'secondary'	=> __( 'Top Menu', 'tuxtheme' ),

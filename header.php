@@ -7,7 +7,7 @@
         </ul>
     </div>
     <div class="header__mid clearfix main">
-        <div class="header__mid-content main clearfix">
+        <div class="header__mid-content main">
             <div class="logo">
                     <?php if ($tux_option['tux_logo'] != '') { ?>
                         <?php if (is_single()) { ?>
@@ -15,7 +15,6 @@
                                 <img src="<?php echo esc_attr($tux_option['tux_logo']); ?>" height="80"
                                      alt="<?php echo esc_attr(get_bloginfo('name')); ?>">
                             <h2 class="hide" itemprop="headline"><?php bloginfo('name'); ?></h2><!-- END #logo -->
-
                         <?php } else { ?>
                             <a href="<?php echo esc_url(get_bloginfo('url')); ?>">
                                 <img src="<?php echo esc_attr($tux_option['tux_logo']); ?>" height="80"
@@ -38,7 +37,7 @@
                     $my_date = gmdate("Y-m-d H:i:s", time() + 60 * 60 * 7);
                     ?>
             </div>
-            <div>
+            <div class="searchbar">
                 <form class="header_search" action="<?php echo get_bloginfo('url'); ?>">
                     <input class="form__input form__input__header" id="search" type="text" name="s" placeholder="Search">
                     <input class="form__button form__button__header" type="submit">
@@ -51,8 +50,8 @@
     </div>
 
     <div class="js-nav-offset"></div>
-    <div class="header__bottom">
-        <ul class="nav__row clearfix ">
+    <div class="header__bottom" id="header-menu">
+        <ul class="nav-menu" id="ulist">
             <?php wp_nav_menu(array('theme_location' => 'primary', 'items_wrap' => '%3$s', 'container_class' => false, 'container' => false, 'menu_id' => '', 'fallback_cb' => false)); ?>
         </ul>
     </div>

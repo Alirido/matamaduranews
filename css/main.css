@@ -320,6 +320,9 @@ a:hover {
     padding: 5px
 }
 
+.pa10 {
+    padding: 10px;
+}
 
 .clsslide{
     max-width: 80%;
@@ -402,4 +405,8 @@ ul.nav__row li a{
 
 .mb-10{
     margin-bottom: -10px;
+}
+
+a i {
+    color: #fff;
 }

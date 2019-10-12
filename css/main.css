@@ -321,7 +321,7 @@ a:hover {
 }
 
 .pa10 {
-    padding: 10px;
+    padding: 10px 0;
 }
 
 .clsslide{
@@ -409,4 +409,16 @@ ul.nav__row li a{
 
 a i {
     color: #fff;
+}
+
+.shareicon{
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+}
+
+.shareother{
+    width: fit-content;
+    border-radius: 5px;
+    box-shadow: 0 3px 7px rgba(98,98,98,.5);
 }

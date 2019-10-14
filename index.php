@@ -10,13 +10,15 @@
 
   <title></title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <?php wp_head();?>
     <script type="text/javascript" src="js/stickyHeader.js"></script>
+    <script type="text/javascript" src="js/pageScript.js"></script>
 </head>
 
 <body>
     <?php get_header(); ?>
-    <?php //include 'headline.php'; ?>
+    <?php //include 'share-top.php'; ?>
     <?php get_footer(); ?>
 
 </body>

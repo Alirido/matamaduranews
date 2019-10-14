@@ -320,6 +320,9 @@ a:hover {
     padding: 5px
 }
 
+.pa10 {
+    padding: 10px 0;
+}
 
 .clsslide{
     max-width: 80%;
@@ -402,4 +405,63 @@ ul.nav__row li a{
 
 .mb-10{
     margin-bottom: -10px;
+}
+
+a i {
+    color: #fff;
+}
+
+.shareicon{
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+}
+
+.shareother{
+    width: fit-content;
+    border-radius: 5px;
+    box-shadow: 0 3px 7px rgba(98,98,98,.5);
+}
+
+#shareother{
+    letter-spacing: 0.01em;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    position: absolute;
+    background: #fff;
+    z-index: 9003;
+    width: 130px;
+    left: 513px;
+    display: none;
+}
+
+#shareother ul{
+    margin: 5px;
+    padding: 5px;
+    letter-spacing: 0.01em;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    border: 0;
+    vertical-align: baseline;
+    list-style-type: none;
+    box-sizing: border-box;
+    zoom: 1;
+    background: 0 0 !important;
+    height: 234px;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+
+#shareother ul li {
+    margin: 5px;
 }

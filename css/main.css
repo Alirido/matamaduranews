@@ -97,7 +97,7 @@ li {
 .ovh,
 .sideover span,
 .tagcloud2 {
-    overflow: hidden
+    overflow: auto;
 }
 
 theader {
@@ -464,4 +464,40 @@ a i {
 
 #shareother ul li {
     margin: 5px;
+}
+
+.circle {
+    border-radius: 999px;
+}
+
+.mr180 h3 a {
+    color: #222222;
+    text-decoration: none;
+}
+
+.mr180 h3 a:hover{
+    text-decoration: none;
+}
+
+.mr180 div span a{
+    color: #999;
+}
+
+.fr {
+    position: relative;
+    float: left;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mr3 {
+    margin-right: 3px;
+}
+
+li.p1520{
+    margin: 5px 0;
+    border-bottom: none;
 }

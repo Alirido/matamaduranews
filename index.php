@@ -13,12 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <?php wp_head();?>
     <script type="text/javascript" src="js/stickyHeader.js"></script>
-    <script type="text/javascript" src="js/pageScript.js"></script>
 </head>
 
 <body>
     <?php get_header(); ?>
-    <?php //include 'share-top.php'; ?>
+    <?php include 'headline.php'; ?>
     <?php get_footer(); ?>
 
 </body>

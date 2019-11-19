@@ -493,6 +493,10 @@ a i {
     margin: 0 auto;
 }
 
+.ml5{
+    margin-left: 5px;
+}
+
 .mr3 {
     margin-right: 3px;
 }
@@ -512,10 +516,11 @@ li.p1520{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border-bottom: 1px solid red;
 }
 
 .f22{
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .bsht{
@@ -525,18 +530,33 @@ li.p1520{
     margin: 0;
     position: relative;
     display: inline-block;
-    padding: 10px 0;
-    font-weight: 700!important;
+    padding: 5px;
+    font-weight: 100!important;
     text-transform: uppercase!important;
-    color: #4a4a4a;
+    color: white;
+    background: red;
+}
+
+div.artohtitm a div.pos_rel{
+    margin-right: 10px;
 }
 
 div.artohtitm a div.pos_rel img {
-    float: left;
+    width: 100%;
+    height: auto;
 }
 
 div.artohtitm {
     margin: 10px 0;
     float: left;
-    width: 50%;
+    width: 25%;
+}
+
+div.artohtitm div h3{
+    margin-right: 10px;
+}
+
+div.artohtitm div h3 a {
+    font-family: "Open Sans", arial, sans-serif;
+    color: #222222;
 }

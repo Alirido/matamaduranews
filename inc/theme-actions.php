@@ -396,7 +396,7 @@ function tux_related_posts_cat($tipe='post') {
                             <img src="<?php echo $thumbnail;?>" width="163" height="113" class="shou2" alt="<?php echo esc_attr( get_the_title() ); ?>">
                         </div>
                     </a>
-                    <h3><a href="<?php echo esc_url( get_the_permalink() ); ?>" class="f14" title="<?php echo esc_attr( get_the_title() ); ?>"><?php the_title(); ?></a></h3>
+                    <div><h3 class="ml5 f14"><a href="<?php echo esc_url( get_the_permalink() ); ?>" class="f14" title="<?php echo esc_attr( get_the_title() ); ?>"><?php the_title(); ?></a></h3></div>
                 </div><!--.post.excerpt-->
             <?php } echo '<div class="cl2"></div></div></div>';
             wp_reset_postdata();

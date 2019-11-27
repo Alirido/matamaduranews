@@ -34,5 +34,6 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/jquery.fancybox.pack.js" defer></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/jquery.bxslider.mini.js" defer></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/stickyHeader.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/js/pageScript.js"></script>
 <?php wp_footer(); ?>
 

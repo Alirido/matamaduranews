@@ -17,7 +17,7 @@ $tux_option = get_option(TUX_THEME_NAME);
 function tuxtheme_opt() {
 }
 
-//require_once( 'inc/theme-actions.php' );
+require_once( 'inc/theme-actions.php' );
 
 
 /*require_once( 'inc/easy-image-gallery/easy-image-gallery.php' );
